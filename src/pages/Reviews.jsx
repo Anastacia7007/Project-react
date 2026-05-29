@@ -103,7 +103,7 @@ export default function Reviews() {
       {showModal && (
         <div className="modal show">
           <div className="modal-content">
-            <h3>💜 Спасибо за ваш отзыв!<br />Мне безумно приятно</h3>
+            <h3>💜 Спасибо за ваш отзыв!<br />Мне безумно приятно.</h3>
             <button className="btn" onClick={() => setShowModal(false)}>
               Ок
             </button>

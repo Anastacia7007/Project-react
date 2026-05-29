@@ -15,21 +15,21 @@ export default function About() {
               <div
                 className="slide active"
                 style={{
-                  backgroundImage: `url(${process.env.PUBLIC_URL + "/images/photo_2026-05-26_22-41-37.jpg"})`
+                  backgroundImage: "url('/images/photo_2026-05-26_22-41-37.jpg')"
                 }}
               />
 
               <div
                 className="slide"
                 style={{
-                  backgroundImage: `url(${process.env.PUBLIC_URL + "/images/photo_2026-05-26_22-42-45.jpg"})`
+                  backgroundImage: "url('/images/photo_2026-05-26_22-42-45.jpg')"
                 }}
               />
 
               <div
                 className="slide"
                 style={{
-                  backgroundImage: `url(${process.env.PUBLIC_URL + "/images/photo_2026-05-26_22-45-15.jpg"})`
+                  backgroundImage: "url('/images/photo_2026-05-26_22-45-15.jpg')"
                 }}
               />
 
@@ -102,31 +102,19 @@ export default function About() {
         <div className="grid-3">
 
           <div className="card edu-card">
-            <img
-              src={process.env.PUBLIC_URL + "/images/ufu.jpg"}
-              className="edu-img"
-              alt="ЮФУ"
-            />
+            <img src="/images/ufu.jpg" className="edu-img" alt="ЮФУ" />
             <h3>ЮФУ</h3>
             <p>Лингвистика<br />2012 — 2016</p>
           </div>
 
           <div className="card edu-card">
-            <img
-              src={process.env.PUBLIC_URL + "/images/GOETHE-INSTITUT_0.jpg"}
-              className="edu-img"
-              alt="Goethe"
-            />
+            <img src="/images/GOETHE-INSTITUT_0.jpg" className="edu-img" alt="Goethe" />
             <h3>Goethe Zertifikat C1</h3>
             <p>Международная сертификация немецкого языка</p>
           </div>
 
           <div className="card edu-card">
-            <img
-              src={process.env.PUBLIC_URL + "/images/6318253880.jpg"}
-              className="edu-img"
-              alt="Germany internship"
-            />
+            <img src="/images/6318253880.jpg" className="edu-img" alt="Germany internship" />
             <h3>Стажировка в Германии</h3>
             <p>Практика преподавания и языковая среда</p>
           </div>
