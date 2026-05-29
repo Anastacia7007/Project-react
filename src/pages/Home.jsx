@@ -34,10 +34,11 @@ export default function Home() {
 
         <div className="mini-about-grid">
 
+          {/* ✅ ИСПРАВЛЕННАЯ КАРТИНКА */}
           <div
             className="mini-about-photo"
             style={{
-              backgroundImage: "url('/images/photo_2026-05-26_22-41-37.jpg')"
+              backgroundImage: `url(${process.env.PUBLIC_URL + "/images/photo_2026-05-26_22-41-37.jpg"})`
             }}
           />
 
