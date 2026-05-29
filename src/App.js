@@ -13,17 +13,17 @@ import Application from "./pages/Application";
 function App() {
   return (
     <BrowserRouter basename="/Project-react">
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/courses" element={<Courses />} />
-          <Route path="/reviews" element={<Reviews />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/contacts" element={<Contacts />} />
-          <Route path="/application" element={<Application />} />
-        </Routes>
-      </Layout>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="courses" element={<Courses />} />
+          <Route path="reviews" element={<Reviews />} />
+          <Route path="faq" element={<FAQ />} />
+          <Route path="contacts" element={<Contacts />} />
+          <Route path="application" element={<Application />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 }
