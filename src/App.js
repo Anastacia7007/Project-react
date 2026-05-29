@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Layout from "./components/Layout";
 
 import Home from "./pages/Home";
@@ -9,7 +10,7 @@ import FAQ from "./pages/FAQ";
 import Contacts from "./pages/Contacts";
 import Application from "./pages/Application";
 
-export default function App() {
+function App() {
   return (
     <BrowserRouter>
       <Layout>
@@ -26,3 +27,5 @@ export default function App() {
     </BrowserRouter>
   );
 }
+
+export default App;
