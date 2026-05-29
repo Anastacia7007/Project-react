@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Сайт-визитка">
+<meta name="keywords" content="сайт, визитка">
+<meta name="robots" content="noindex, nofollow">
+<meta name="author" content="Савина Анастасия, Панюшкина Виктория, Мирчук Анастасия">
+<meta name="copyright" lang="ru" content="ЮФУ">
+<meta name="reply-to" content="anasavi@sfedu.ru, paniushkina@sfedu.ru, mirchuk@sfedu.ru">
+<meta http-equiv="creation-date" content="Wednesday, 20, May 2026 16:00:00 GMT">
+<meta http-equiv="content-language" content="ru">
+<meta http-equiv="refresh" content="600; url=about.html">
+
+<title>Обо мне</title>
+
+<link rel="stylesheet" href="../src/style.css">
+<link rel="stylesheet" href="../src/about.css">
+<link rel="stylesheet" href="../src/normalize.css">
+</head>
+
+<body>
+
+<!-- MENU BUTTON -->
+<div class="menu-button" onclick="toggleMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<!-- SIDE MENU -->
+<div class="side-menu" id="sideMenu">
+  <a href="index.html" data-i18n="menu_home">Главная</a>
+  <a href="about.html" data-i18n="menu_about">Обо мне</a>
+  <a href="courses.html" data-i18n="menu_courses">Программы</a>
+  <a href="reviews.html" data-i18n="menu_reviews">Отзывы</a>
+  <a href="faq.html" data-i18n="menu_faq">FAQ</a>
+  <a href="contacts.html" data-i18n="menu_contacts">Контакты</a>
+</div>
+
+<!-- ABOUT HERO -->
+<section class="section reveal">
+
+  <div class="about-layout">
+
+    <!-- LEFT PHOTO -->
+    <div class="about-photo">
+
+      <div class="photo-slider">
+
+        <div class="slide active"
+          style="background-image:url('../images/photo_2026-05-26_22-41-37.jpg')">
+        </div>
+
+        <div class="slide"
+          style="background-image:url('../images/photo_2026-05-26_22-42-45.jpg')">
+        </div>
+
+        <div class="slide"
+          style="background-image:url('../images/photo_2026-05-26_22-45-15.jpg')">
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT INFO -->
+    <div class="about-info">
+
+      <h1 data-i18n="about_title">Обо мне</h1>
+
+      <p class="about-text" data-i18n="about_text_1">
+        Преподаватель немецкого языка с опытом более 10 лет.
+        Помогаю ученикам свободно говорить, успешно сдавать экзамены
+        и использовать язык в жизни, работе и путешествиях.
+      </p>
+
+      <p class="about-text" data-i18n="about_text_2">
+        Работаю по современным европейским методикам обучения.
+        Подготовка к Goethe Zertifikat, ЕГЭ, ОГЭ, IELTS и уровням A1–C1.
+      </p>
+
+      <a href="courses.html" class="course-btn" data-i18n="about_button">
+        Выбрать курс
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- STATS -->
+<section class="section reveal">
+
+  <h2 data-i18n="about_stats_title">Почему ученики выбирают меня</h2>
+
+  <div class="grid-4">
+
+    <div class="card">
+      <h3>10+</h3>
+      <p data-i18n="stats_years">лет преподавания</p>
+    </div>
+
+    <div class="card">
+      <h3>1000+</h3>
+      <p data-i18n="stats_students">учеников</p>
+    </div>
+
+    <div class="card">
+      <h3>93%</h3>
+      <p data-i18n="stats_results">улучшили результаты</p>
+    </div>
+
+    <div class="card">
+      <h3>4.9★</h3>
+      <p data-i18n="stats_rating">средняя оценка</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- EDUCATION -->
+<section class="section reveal">
+
+  <h2 data-i18n="edu_title">Образование и квалификация</h2>
+
+  <div class="grid-3">
+
+    <div class="card edu-card">
+      <img src="../images/ufu.jpg" class="edu-img">
+      <h3>ЮФУ</h3>
+      <p>Лингвистика<br>2012 — 2016</p>
+    </div>
+
+    <div class="card edu-card">
+      <img src="../images/GOETHE-INSTITUT_0.jpg" class="edu-img">
+      <h3>Goethe Zertifikat C1</h3>
+      <p data-i18n="edu_goethe">
+        Международная сертификация немецкого языка
+      </p>
+    </div>
+
+    <div class="card edu-card">
+      <img src="../images/6318253880.jpg" class="edu-img">
+      <h3 data-i18n="edu_germany_title">Стажировка в Германии</h3>
+      <p data-i18n="edu_germany_text">
+        Практика преподавания и языковая среда
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<script src="../src/script.js"></script>
+
+</body>
+</html>

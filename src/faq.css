@@ -1,0 +1,25 @@
+.faq-item {
+  max-width: 800px;
+  margin: 12px auto;
+  background: rgba(255,255,255,0.06);
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.faq-q {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  transition: 0.4s;
+  color: rgba(255,255,255,0.65);
+}
+
+.faq-item.active .faq-a {
+  max-height: 200px;
+  padding: 0 20px 20px;
+}
