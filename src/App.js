@@ -12,7 +12,7 @@ import Application from "./pages/Application";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Project-react">
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
