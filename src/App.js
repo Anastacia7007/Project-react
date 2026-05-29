@@ -1,22 +1,28 @@
-function App() {
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Courses from "./pages/Courses";
+import Reviews from "./pages/Reviews";
+import FAQ from "./pages/FAQ";
+import Contacts from "./pages/Contacts";
+import Application from "./pages/Application";
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/application" element={<Application />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 }
-
-export default App;

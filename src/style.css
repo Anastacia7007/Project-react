@@ -701,3 +701,10 @@ textarea:focus {
 .faq-item.active .faq-q::after {
   transform: rotate(45deg);
 }
+
+.menu-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 2000;
+}
