@@ -1,7 +1,8 @@
 import { useState } from "react";
+import { Outlet } from "react-router-dom";
 import Menu from "./Menu";
 
-export default function Layout({ children }) {
+export default function Layout() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -17,7 +18,7 @@ export default function Layout({ children }) {
       <Menu isOpen={isOpen} toggleMenu={toggleMenu} />
 
       <main>
-        {children}
+        <Outlet />
       </main>
     </>
   );
