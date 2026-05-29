@@ -9,6 +9,8 @@ export default function FAQ() {
 
   const [input, setInput] = useState("");
 
+  const [openIndex, setOpenIndex] = useState(null);
+
   const addQuestion = () => {
     if (!input.trim()) return;
 
@@ -20,25 +22,41 @@ export default function FAQ() {
     setInput("");
   };
 
+  const toggleQuestion = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <div>
 
-      {/* FAQ SECTION */}
       <section className="section">
         <h1>Часто задаваемые вопросы</h1>
 
         <div id="faqList">
 
           {questions.map((item, index) => (
-            <div className="faq-item" key={index}>
-              <div className="faq-q">{item.q}</div>
-              <div className="faq-a">{item.a}</div>
+            <div
+              className={`faq-item ${openIndex === index ? "active" : ""}`}
+              key={index}
+            >
+              <div
+                className="faq-q"
+                onClick={() => toggleQuestion(index)}
+                style={{ cursor: "pointer" }}
+              >
+                {item.q}
+              </div>
+
+              {openIndex === index && (
+                <div className="faq-a">
+                  {item.a}
+                </div>
+              )}
             </div>
           ))}
 
         </div>
 
-        {/* ADD QUESTION */}
         <div className="faq-add form">
           <input
             type="text"
