@@ -15,21 +15,21 @@ export default function About() {
               <div
                 className="slide active"
                 style={{
-                  backgroundImage: `url(${process.env.PUBLIC_URL + "/images/photo_2026-05-26_22-41-37.jpg"})`
+                  backgroundImage: "url('/Project-react/images/photo_2026-05-26_22-41-37.jpg')"
                 }}
               />
 
               <div
                 className="slide"
                 style={{
-                  backgroundImage: `url(${process.env.PUBLIC_URL + "/images/photo_2026-05-26_22-42-45.jpg"})`
+                  backgroundImage: "url('/Project-react/images/photo_2026-05-26_22-42-45.jpg')"
                 }}
               />
 
               <div
                 className="slide"
                 style={{
-                  backgroundImage: `url(${process.env.PUBLIC_URL + "/images/photo_2026-05-26_22-45-15.jpg"})`
+                  backgroundImage: "url('/Project-react/images/photo_2026-05-26_22-45-15.jpg')"
                 }}
               />
 
@@ -53,7 +53,7 @@ export default function About() {
               Подготовка к Goethe Zertifikat, ЕГЭ, ОГЭ, IELTS и уровням A1–C1.
             </p>
 
-            <a href="/courses" className="course-btn">
+            <a href="/Project-react/courses" className="course-btn">
               Выбрать курс
             </a>
 
@@ -103,7 +103,7 @@ export default function About() {
 
           <div className="card edu-card">
             <img
-              src={process.env.PUBLIC_URL + "/images/ufu.jpg"}
+              src="/Project-react/images/ufu.jpg"
               className="edu-img"
               alt="ЮФУ"
             />
@@ -113,7 +113,7 @@ export default function About() {
 
           <div className="card edu-card">
             <img
-              src={process.env.PUBLIC_URL + "/images/GOETHE-INSTITUT_0.jpg"}
+              src="/Project-react/images/GOETHE-INSTITUT_0.jpg"
               className="edu-img"
               alt="Goethe"
             />
@@ -123,7 +123,7 @@ export default function About() {
 
           <div className="card edu-card">
             <img
-              src={process.env.PUBLIC_URL + "/images/6318253880.jpg"}
+              src="/Project-react/images/6318253880.jpg"
               className="edu-img"
               alt="Germany internship"
             />

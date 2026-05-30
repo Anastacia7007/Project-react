@@ -12,17 +12,16 @@
 
     <title>Deutsch mit Mirtschuk</title>
 
-    <!-- favicon -->
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
 
-    <!-- FIX для React Router на GitHub Pages -->
+    <!-- FIX: SPA GitHub Pages (React Router) -->
     <script>
       (function () {
-        const redirect = sessionStorage.redirect;
-        delete sessionStorage.redirect;
+        const redirect = sessionStorage.getItem("redirect");
 
-        if (redirect && redirect !== location.href) {
-          history.replaceState(null, null, redirect);
+        if (redirect) {
+          sessionStorage.removeItem("redirect");
+          window.history.replaceState(null, null, redirect);
         }
       })();
     </script>
