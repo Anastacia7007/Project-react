@@ -238,6 +238,30 @@ body {
   transform: translateY(-3px) scale(1.03);
 }
 
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 16px 18px;
+
+  border-radius: 16px;
+  border: 1px solid var(--border);
+
+  background: rgba(255,255,255,0.75);
+
+  color: var(--text);
+  outline: none;
+
+  font-size: 16px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--coffee);
+}
+
+
 /* ================= FAQ FIX ================= */
 .faq-item {
   background: var(--card);
