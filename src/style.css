@@ -55,9 +55,9 @@ body {
 /* ================= MENU FIX ================= */
 .menu-button {
   position: fixed;
-  top: 22px;
-  right: 22px;
-  z-index: 9999;
+  top: 24px;
+  right: 24px;
+  z-index: 3000;
   cursor: pointer;
 }
 
@@ -70,27 +70,48 @@ body {
   border-radius: 20px;
 }
 
-/* меню */
+/* МЕНЮ */
 .side-menu {
   position: fixed;
   top: 0;
-  right: 0;
-  width: 300px;
+
+  /* оставляем твой стиль */
+  right: -320px;
+  width: 290px;
   height: 100vh;
 
-  background: rgba(255, 248, 242, 0.97);
+  background: rgba(255, 248, 242, 0.85);
   backdrop-filter: blur(18px);
 
-  padding: 90px 30px;
+  border-left: 1px solid var(--border);
 
-  transform: translateX(100%);
-  transition: 0.35s ease;
+  padding: 100px 30px;
 
-  z-index: 5000;
+  transition: right 0.4s ease;
+
+  z-index: 2500;
+
+  /* ВАЖНО */
+  overflow-y: auto;
 }
 
+/* открытие */
 .side-menu.active {
-  transform: translateX(0);
+  right: 0;
+}
+
+.side-menu a {
+  display: block;
+  color: var(--text);
+  text-decoration: none;
+  margin: 18px 0;
+  transition: 0.25s;
+  font-weight: 500;
+}
+
+.side-menu a:hover {
+  transform: translateX(6px);
+  color: var(--coffee);
 }
 
 /* затемнение */
@@ -98,7 +119,23 @@ body {
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.4);
-  z-index: 4000;
+  z-index: 2000;
+}
+
+/* МОБИЛКА */
+@media (max-width: 768px) {
+
+  .side-menu {
+    width: 280px;
+
+    /* главное исправление */
+    right: -280px;
+  }
+
+  .side-menu.active {
+    right: 0;
+  }
+
 }
 
 /* ================= HERO ================= */
